@@ -1,0 +1,31 @@
+@import url("~flag-icon-css/css/flag-icon.css");
+@import url('../pics/index');
+
+.menu {
+  &.open {
+    .list {
+      display: block;
+    }
+    .title {
+      &:extend(.minus);
+    }
+  }
+  .title {
+    padding: 0 6px 0 16px;
+    &:extend(.plus);
+    background-position: left 1px;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .list {
+    display: none;
+    margin: 0;
+
+    a {
+      color: blue;
+    }
+  }
+}
